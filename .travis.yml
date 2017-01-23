@@ -5,9 +5,11 @@ os:
 - linux
 - osx
 before_install:
-- npm config set @opam:registry https://opam-npm.andreypopp.com
+- npm install -g @andreypopp/esy
+install:
+- esy install
 script:
-- npm run build
-- ./node_modules/.bin/esy ./_build/bin/hello.byte
-- ./node_modules/.bin/esy ./_build/bin/hello.native
+- esy build
+- esy ./_build/bin/hello.byte
+- esy ./_build/bin/hello.native
 

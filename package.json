@@ -11,11 +11,6 @@
     ]
   },
   "scripts": {
-    "build": "esy build",
-    "shell": "esy shell",
-    "clean": "esy clean",
-    "repl": "esy utop",
-    "editor": "esy $EDITOR",
     "test": "echo 'No tests but that is ok for now...'"
   },
   "dependencies": {
@@ -29,7 +24,6 @@
     "ocaml": "andreypopp/ocaml#esy"
   },
   "devDependencies": {
-    "esy": "jordwalke/esy",
     "ocaml": "esy-ocaml/ocaml#esy"
   }
 }

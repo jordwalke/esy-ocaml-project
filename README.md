@@ -6,42 +6,36 @@ A project which demonstrates an OCaml workflow with esy.
 
 ## Installation
 
-While we are in an experiment mode you need to use a custom registry for `@opam`
-scope (this is where we publish opam packages to):
+You need to install esy first:
 
-    % npm config set @opam:registry https://opam-npm.andreypopp.com
+    % npm install -g @andreypopp/esy
 
-Then just use `npm install` as usual:
+Then just use `esy install` as usual:
 
-    % npm install .
-
-**WARNING:** Only `npm` is supported right now (not `yarn`, `pnpm`, or `ied`).
-This restriction is temporary and will be lifted in the future.
+    % esy install
 
 ## Build
 
-    % npm run build
+    % esy build
 
 ## Clean build artifcats
 
-    % npm run clean
+    % esy clean
 
 ## Shell into build environment
 
-    % npm run shell
+    % esy shell
 
 ## Run preconfigured OCaml REPL
 
-    % npm run repl
+    % esy repl
 
 ## Merlin
 
 Merlin integration is included. If your editor of choice has Merlin
-plugin/extension then you can run:
+plugin/extension then you can run execute it like this:
 
-    % npm run editor
-
-and start using it (`$EDITOR` env var must point to your editor of choice).
+    % esy vim ./bin/hello.ml
 
 ## Merlin + Vim
 
